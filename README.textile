@@ -27,7 +27,7 @@ You need to import the class file into each MSProject file you want to sync.
 ## The PROJECT_NAME constant must match exactly the name if the project in Basecamp.
 # After you have edited the constants you can click the Save icon and close the Visual Basic Editor.
 
-h2. Adding a button to you MSProject toolbar
+h2. Adding a button to your MSProject toolbar
 
 You only need to do this once and a button will be available for all your projects.
 
