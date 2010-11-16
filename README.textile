@@ -9,7 +9,12 @@ h1. Overview
 After installation (see below) the macro will perform the following sequence of events:
 
 # Each milestone in the projected is synced. The milestone name, deadline and responsible party are sent to Basecamp. A todo list is created for each milestone.
-# Then each task for the milestone 
+# Then each task for the milestone is synced. The task name, due date and assignee and sent to Basecamp and added to the milestones todo-list.
+
+h2. Some notes
+
+# The names of people in Basecamp must be exactly the same as MSProject
+# Tasks that are not indented within a milestone are ignored
 
 h1. Installation
 
