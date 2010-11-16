@@ -24,7 +24,7 @@ You need to import the class file into each MSProject file you want to sync.
 # Select the MSProject-Basecamp-Sync.cls file and click Open
 # A new folder called "Class Modules" will appear. Expand the folder and double-click the MSProject-Basecamp-Sync icon
 # At the top of the file you need to edit the SERVER_URL, API_KEY and PROJECT_NAME constants.
-. The PROJECT_NAME constant must match exactly the name if the project in Basecamp.
+## The PROJECT_NAME constant must match exactly the name if the project in Basecamp.
 # After you have edited the constants you can click the Save icon and close the Visual Basic Editor.
 
 h2. Adding a button to you MSProject toolbar
