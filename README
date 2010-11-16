@@ -1,0 +1,44 @@
+h1. MSProject-Basecamp-Sync
+
+This project is a Visual Basic module that I wrote for MSProject to send task and 
+milestone information to Basecamp. Basecamp is an awesome project management system
+made by 37signals - http://www.basecamphq.com
+
+h1. Overview
+
+After installation (see below) the macro will perform the following sequence of events:
+
+1. Each milestone in the projected is synced. The milestone name, deadline and responsible party are sent to Basecamp. A todo list is created for each milestone.
+1. Then each task for the milestone 
+
+h1. Installation
+
+h2. Importing the class file
+
+You need to import the class file into each MSProject file you want to sync.
+
+1. Download the MSProject-Basecamp-Sync.cls file from github.
+1. Open your MSProject file
+1. Click on the Tools -> Macro -> Visual Basic Editor menu or press Alt+F11
+1. From the Visual Basic editor window, click on the File -> Import File ... menu or press Ctrl+M
+1. Select the MSProject-Basecamp-Sync.cls file and click Open
+1. A new folder called "Class Modules" will appear. Expand the folder and double-click the MSProject-Basecamp-Sync icon
+1. At the top of the file you need to edit the SERVER_URL, API_KEY and PROJECT_NAME constants.
+1. The PROJECT_NAME constant must match exactly the name if the project in Basecamp.
+1. After you have edited the constants you can click the Save icon and close the Visual Basic Editor.
+
+h2. Adding a button to you MSProject toolbar
+
+You only need to do this once and a button will be available for all your projects.
+
+1. Click on the Tools -> Customize -> Toolbars ... menu
+1. Click on the New.. button, enter BasecampSync for the Toolbar name and click OK
+1. An empty toolbar will appear next to the dialog box.
+1. Then select the Commands tab, choose All Macros from the categories list.
+1. Click and drag the <project name>!BasecampSync command to the new toolbar.
+1. Right click on the new button in the toolbar and select Assign Macro ...
+1. Change the Command to 'Macro "BasecampSync"' then click OK
+1. Now you can click a drag the new toolbar and dock it where ever you want
+
+
+
